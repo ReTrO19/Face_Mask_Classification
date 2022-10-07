@@ -55,8 +55,8 @@ https://www.kaggle.com/datasets/andrewmvd/face-mask-detection
 #### **Main Installation**
 
 ```html
-    > git clone https://github.com/ReTrO19/Wild_Animals_Classifer_Using_CNN.git
-    > cd Wild_Animals_Classifer_Using_CNN
+    > git clone https://github.com/ReTrO19/Face_Mask_Classification.git
+    > cd Face_Mask_Classification
     # using pip
     > pip install -r requirements.txt
     # using conda
