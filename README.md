@@ -67,17 +67,23 @@ https://www.kaggle.com/datasets/andrewmvd/face-mask-detection
 #### **How to run the inference**
 ```html
     (Run jupyter notebook for train the model and check accuracy and whatnot)
+
     # For exploring the model run the below command
+
+    # Running on image inference
     > python utils\image_inf.py -fc False -img test_images\demo.jpeg
+
+    # Run a video inference
+    > python utils\video_inf.py -fc False -vid test_images\video_file.mp4
 ```
 ---
 ## **Outputs**
-#### ( Model is trained on 2 class Nice and Peace )
-#### **Detected Class: Nice**
+#### ( Model is trained on 2 class with_mask and without_mask )
+#### **Image Inference**
 ```html
-python run_test.py "00000593_300resized.png"
+ > python utils\image_inf.py -fc False -img test_images\mask_test1.png
 ```
-![Nice Class](img/output.png)
+![Nice Class](git_images/output.png)
 
 [Back To The Top](#read-me-template)
 
