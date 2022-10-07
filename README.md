@@ -68,7 +68,7 @@ https://www.kaggle.com/datasets/andrewmvd/face-mask-detection
 ```html
     (Run jupyter notebook for train the model and check accuracy and whatnot)
     # For exploring the model run the below command
-    > python run_test.py "<img_file_name>"
+    > python utils\image_inf.py -fc False -img test_images\demo.jpeg
 ```
 ---
 ## **Outputs**

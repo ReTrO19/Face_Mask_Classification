@@ -27,13 +27,13 @@ def convert_and_trim_bb(image, rect):
 
 
 def infer_on_video(face_cnn,video_path):
-"""
-Run inference on Video
-:params face_cnn Boolean If true it will run face detection using CNN if False will use HOG Detector
-:params video_path Input video that you want to run inference on
+    """
+    Run inference on Video
+    :params face_cnn Boolean If true it will run face detection using CNN if False will use HOG Detector
+    :params video_path Input video that you want to run inference on
 
-:retrun None
-"""
+    :retrun None
+    """
     cap = cv2.VideoCapture(video_path)
 
     while True:
@@ -93,3 +93,13 @@ Run inference on Video
 
         cv2.imshow("Output:",image_frame)
         cv2.waitKey(1)
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Input values for the infer_on_image function')
+    parser.add_argument('--face_cnn','-fc',type=bool,help='Pass True if CNN Face Detector else False to use HOG Detector. ',required=True)
+    parser.add_argument('--inp_vid','-vid',help='Pass video file as an input. ',required=True)
+
+    args = parser.parse_args()
+    infer_on_video(args.face_cnn,args.inp_vid)
