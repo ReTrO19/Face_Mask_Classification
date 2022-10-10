@@ -21,7 +21,7 @@
 ## **Description**
 
 
-This projects helps in classification wheather a person is wearing mask or not.
+This projects helps in classification whether a person is wearing mask or not.
 
 <font size="4"> **Use cases of this project**</font>
 
